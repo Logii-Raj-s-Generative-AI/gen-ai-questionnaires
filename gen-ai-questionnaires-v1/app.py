@@ -22,3 +22,7 @@ async def root():
 @app.get("/v1")
 async def greeting():
     return { "message": "Hello from gen-ai!"}
+
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)
